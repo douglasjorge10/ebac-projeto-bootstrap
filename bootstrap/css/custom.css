@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+/* header menu de navegacacao */
+.container{
+    width: 100%;
+}
+.div-nav{
+    line-height: 4em;
+}
+.div-nav ul li a{
+    color: #000;
+}
+.div-nav ul li a:hover{   
+    color: #777777;
+}
+/* projetos card */
+.card{
+    margin: 0 0 20px 60px;
+    padding: 10px;
+}
+.card img{
+    height: 60%;
+}
+.btn-card a{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+/* footer roda pe */
+footer.container{
+    width: 100%;
+    height: auto;
+
+    border-top: #5a585886 solid 2px;
+}
+footer.container div{
+    width: 110%;
+}
+footer.container p{
+    margin: 20px auto;
+}
+
+
+
+
