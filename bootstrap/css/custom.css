@@ -17,7 +17,8 @@
 /*secao skill*/
 .label-center{
     line-height: 0em;
-    margin: 5px;
+    margin: 20px;
+    color: #b40c0cc0;
 }
 /* projetos card */
 .card{
@@ -31,6 +32,16 @@
     display: block;
     width: 200px;
     margin: 0 auto;
+}
+/* secao formacao */
+.span-card-forma{
+    font-size: 10pt;
+    text-align: end;
+    margin-top: -10px;
+}
+.formacao p{
+    font-size: 12pt;
+    text-align: justify;
 }
 /* formulario */
 html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after {
