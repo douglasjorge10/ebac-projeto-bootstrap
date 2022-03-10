@@ -27,6 +27,27 @@
     width: 200px;
     margin: 0 auto;
 }
+/* formulario */
+html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+/* formatando titulo do formulario */
+html .cog-cognito--styled .cog-header h1, :root:root:root:root:root .cog-cognito--styled .cog-header h1 {
+    margin-bottom: -25px !important;
+    margin-top: 50px !important;
+}
+/* button do formulario */
+html .cog-cognito--styled .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button {
+    margin: 0 auto !important;
+    background-color: #fff !important;
+    color:#000 !important;
+    border: 1px solid #696767 !important;
+}
+/* logo de terceiro do formulario  */
+html .cog-branding, :root:root:root:root:root .cog-branding{
+    display: none !important;
+}
 /* footer roda pe */
 footer.container{
     width: 100%;
