@@ -14,6 +14,13 @@
 .div-nav ul li a:hover{   
     color: #777777;
 }
+/* redes sociais */
+.div-redes{
+    text-align: end;
+}
+.div-redes a img{
+    width: 35px;
+}
 /*secao skill*/
 .label-center{
     line-height: 0em;
