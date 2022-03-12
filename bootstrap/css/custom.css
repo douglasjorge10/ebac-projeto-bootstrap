@@ -75,18 +75,15 @@ html .cog-branding, :root:root:root:root:root .cog-branding{
     display: none !important;
 }
 /* footer roda pe */
-footer.container{
-    width: 100%;
-    height: auto;
-
+footer{
+    margin: 0 auto;
+    width: 75%;
+}
+footer p{
     border-top: #5a585886 solid 2px;
-}
-footer.container div{
-    width: 110%;
-}
-footer.container p{
     font-size: 0.8rem;
-    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
 }
 @media (max-width:1000px){
     .div-nav li {
