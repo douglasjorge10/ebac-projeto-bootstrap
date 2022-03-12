@@ -22,7 +22,7 @@
 }
 /* projetos card */
 .card{
-    margin: 0 0 20px 60px;
+    margin: 0 0 2% 6%;
     padding: 10px;
 }
 .card img{
@@ -34,15 +34,25 @@
     margin: 0 auto;
 }
 /* secao formacao */
+.formacao .card div{
+    display: block;
+    width: 300px;
+}
+.formacao .card div h5{
+    margin-bottom: -8px;
+}
 .span-card-forma{
+    display: inline-block;
+    width: 90%;
     font-size: 10pt;
-    text-align: end;
-    margin-top: -10px;
+    text-align: end; 
 }
 .formacao p{
+    margin-top: 10px;
     font-size: 12pt;
     text-align: justify;
 }
+
 /* formulario */
 html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after {
     background-color: #fff !important;
@@ -75,9 +85,22 @@ footer.container div{
     width: 110%;
 }
 footer.container p{
+    font-size: 0.8rem;
     margin: 20px auto;
 }
-
+@media (max-width:1000px){
+    .div-nav li {
+        margin: 0 auto;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .card{
+        margin: 0 0 4% 0;
+        padding: 10px;         
+    }
+}
 
 
 
