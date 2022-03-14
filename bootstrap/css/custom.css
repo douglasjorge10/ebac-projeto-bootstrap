@@ -21,11 +21,11 @@
     color: #b40c0cc0;
 }
 /* projetos card */
-.card{
+#iprojetos .card{
     margin: 0 0 2% 6%;
     padding: 10px;
 }
-.card img{
+#iprojetos .card img{
     height: 60%;
 }
 .btn-card a{
@@ -34,6 +34,10 @@
     margin: 0 auto;
 }
 /* secao formacao */
+.formacao .card {
+    padding: 10px;
+    width:300px;
+}
 .formacao .card div{
     display: block;
     width: 300px;
@@ -75,20 +79,40 @@ html .cog-branding, :root:root:root:root:root .cog-branding{
     display: none !important;
 }
 /* footer roda pe */
-footer.container{
-    width: 100%;
-    height: auto;
-
+footer{
+    margin: 0 auto;
+    width: 75%;
+}
+footer p{
     border-top: #5a585886 solid 2px;
-}
-footer.container div{
-    width: 110%;
-}
-footer.container p{
     font-size: 0.8rem;
-    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
 }
-@media (max-width:1000px){
+@media (max-width:768px){
+    body{
+        padding: 20px;
+    }
+    #isobre div img{
+        margin: 15px 0 30px;
+    }
+    #iprojetos .card a.btn {
+        width: fit-content !important;
+    }
+    #iprojetos .card{
+        margin-bottom: 5%;
+        padding: 10px;         
+        height: 350px;
+    }
+    #iprojetos p{
+        height: 85px;
+    }
+    
+}
+@media (max-width:500px){
+    body{
+        padding: 20px;
+    }
     .div-nav li {
         margin: 0 auto;
     }
@@ -96,9 +120,29 @@ footer.container p{
         display: block;
         margin: 0 auto;
     }
-    .card{
-        margin: 0 0 4% 0;
+    #isobre div img{
+        margin: 15px 0 15px;
+    }
+    #iprojetos div.row{
+        padding: 20px;
+    }
+    #iprojetos p{
+        height: 50px;
+    }
+    #iprojetos .card{
+        margin-bottom: 5%;
         padding: 10px;         
+        height: 350px;
+    }
+    .formacao .card div {
+        display: block;
+        width: 277px;
+    }
+    .formacao div img{
+        width: 50px;
+    }
+    .sobre div:nth-of-type(3) h2{
+display: none;
     }
 }
 
