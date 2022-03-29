@@ -49,9 +49,10 @@ ul{
 #iprojetos .card{
     margin: 0 0 2% 6%;
     padding: 10px;
+    height: 20em;
 }
 #iprojetos .card img{
-    height: 60%;
+    height: 50%;
 }
 .card a.btn{
     margin-top: 10%;
