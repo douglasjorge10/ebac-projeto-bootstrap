@@ -1,19 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap');
 *{
     box-sizing: border-box;
 }
-/* header menu de navegacacao */
+/* header menu de navegacao */
+h1{
+    display: block;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 4em;
+    width: fit-content;    
+}
 
-.container{
-    width: 100%;
+h2.text-center{
+    margin-top: 50px !important;
+}
+.div-title span{
+    display: block;
+    background-color: #fff;
+    font-family: none;
+    font-size: 0.3em !important;
+    text-align: end;
+    margin-top: -6%;  
 }
 .div-nav{
-    line-height: 4em;
+    padding: 20px;
 }
 .div-nav ul li a{
+    border-radius: 6px;
     color: #000;
 }
 .div-nav ul li a:hover{   
-    color: #777777;
+    background-color: #000;
+    color: #fff;
+}
+/* slider */
+#mainSlider img {
+    height: 85vh;
+}
+
+#mainSlider {
+    margin-bottom: 50px;
+}
+
+.carousel-caption {
+    background-color: #0000009d;
 }
 /* redes sociais */
 #isobre p{
@@ -28,6 +57,9 @@
 /*secao skill*/
 ul{
     list-style: none;
+}
+.skills img{
+    width:24px;
 }
 .skills{
     display: flex; 
@@ -87,38 +119,42 @@ ul{
     font-size: 12pt;
     text-align: justify;
 }
-
 /* formulario */
-html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after {
-    background-color: #fff !important;
-    color: #000 !important;
-}
-/* formatando titulo do formulario */
-html .cog-cognito--styled .cog-header h1, :root:root:root:root:root .cog-cognito--styled .cog-header h1 {
-    margin-bottom: -25px !important;
-    margin-top: 50px !important;
-}
-/* button do formulario */
-html .cog-cognito--styled .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button {
-    margin: 0 auto !important;
-    background-color: #fff !important;
-    color:#000 !important;
-    border: 1px solid #696767 !important;
-}
-/* logo de terceiro do formulario  */
-html .cog-branding, :root:root:root:root:root .cog-branding{
-    display: none !important;
+form button, input{
+    margin: 10px 0;
 }
 /* footer roda pe */
 footer{
     margin: 0 auto;
     width: 75%;
+    margin-top: 20px;
 }
 footer p{
     border-top: #5a585886 solid 2px;
     font-size: 0.8rem;
     text-align: center;
     padding-top: 20px;
+}
+/* modais */
+#modal-4 .modal-body form {
+    display: flex;
+    flex-wrap: wrap;
+}
+#modal-4 .modal-body form label{
+   display: block
+
+}
+#modal-4 .modal-body form input{
+   margin-top: 0;
+    height: 35px;
+    width: 90%;
+}
+#modal-4 .modal-body form div{
+width: 40%;
+}
+#modal-4 .modal-body form button{
+    height: fit-content;  
+    margin-top: 5%;
 }
 @media (max-width:768px){
     body{
@@ -141,6 +177,10 @@ footer p{
     #iprojetos p{
         height: 85px;
     }   
+    .carousel-caption{
+        margin-bottom: 2em;
+    }
+
 }
 @media (max-width:500px){
     body{
@@ -186,4 +226,26 @@ footer p{
     .sobre div:nth-of-type(3) h2{
 display: none;
     }
+    .carousel-caption{
+        display: initial !important;
+        height: 35vh ;
+        width: 98%;
+        margin-bottom: 4px;
+        margin-left: -54px !important;
+    }
+}
+@media (max-width: 400px){
+    header h1{
+        font-size: 3em;
+        margin: 0 auto;        
+    }
+    .div-nav{
+        margin: 20px 0;
+    }
+    #mainSlider {
+       display: none;
+    }
+    #modal-4 .modal-body form div{
+        width: 100%;
+        }
 }
