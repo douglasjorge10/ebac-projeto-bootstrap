@@ -213,8 +213,8 @@ footer p {
     body {
         padding: 10px;
     }
-    #isobre .row{
-        margin-top: -20%;
+    #isobre .row h2{
+        margin-top: -5%;
     }
     #isobre p {
         font-size: 0.9em;
