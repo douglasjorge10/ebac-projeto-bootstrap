@@ -11,11 +11,18 @@ h1 {
     font-size: 4em;
     width: fit-content;
 }
-
+#iprojetos h2, .sobre h2{
+    margin-top: 5%;
+}
 h2.text-center {
     margin-top: 50px !important;
 }
-
+/* alterando configuracao .card do bootstrap */
+.card{
+    border: none;
+    padding: 10px; 
+    box-shadow: 1px 1px 3px #b4b4b4;
+}
 .div-title span {
     display: block;
     background-color: #fff;
@@ -69,47 +76,49 @@ h2.text-center {
 ul {
     list-style: none;
 }
-
-.skills img {
-    width: 24px;
-}
-
 .skills {
     display: flex;
 }
-
+.skills ul{
+    padding: 0;
+    margin-left: 0 ;
+    width: 50%;
+}
+ul progress{
+    margin: 5px 0;
+    width: 60%;
+}
+.skills img {
+    width: 24px;
+}
 .skills h2 {
     width: 100%;
 }
-
 .label-center {
     line-height: 0em;
-    margin: 20px;
+    margin: 0 20px;
     color: #b40c0cc0;
 }
 
 /* projetos card */
+#iprojetos .card {
+    margin: 0 0 2% 6%;
+    height: 20em;
+    padding: 10px; 
+    box-shadow: 1px 1px 3px #b4b4b4;
+}
 .card p {
     height: 10%;
     margin-top: 2%;
     font-size: 0.9em;
 }
-
-#iprojetos .card {
-    margin: 0 0 2% 6%;
-    padding: 10px;
-    height: 20em;
-}
-
 #iprojetos .card img {
     height: 50%;
 }
-
 .card a.btn {
-    margin-top: 10%;
-    margin-bottom: -40%;
+    margin-top: 13%;
+    
 }
-
 .btn-card a {
     display: block;
     width: 200px;
@@ -189,12 +198,24 @@ footer p {
     height: fit-content;
     margin-top: 5%;
 }
+@media (max-width:1250px){
 
+    #iprojetos .card {
+        margin: 0 0 2% 6%;
+        height: 260px;
+        width: 254px;
+    }
+    .card a.btn {
+        margin-top: 11%;
+    }
+}
 @media (max-width:768px) {
     body {
         padding: 10px;
     }
-
+    #isobre .row{
+        margin-top: -20%;
+    }
     #isobre p {
         font-size: 0.9em;
     }
@@ -209,14 +230,17 @@ footer p {
 
     #iprojetos .card {
         margin-bottom: 5%;
+        margin-left: 1%;
         padding: 10px;
-        height: 350px;
+        height: 14em;
+        width: 14.4em;
     }
-
-    #iprojetos p {
-        height: 85px;
+    h2{
+        margin-top: 10%;
     }
-
+    .card a.btn {
+        margin-top: 5%;
+    }
     .carousel-caption {
         margin-bottom: 2em;
     }
@@ -264,9 +288,13 @@ footer p {
     #iprojetos .card {
         margin-bottom: 5%;
         padding: 10px;
-        height: 350px;
+        height: 250px;
+        width: 85%;
+        margin: 5% auto;
     }
-
+    .card a.btn{
+        margin-top: 0%;
+    }
     .formacao .card div {
         display: block;
         width: 277px;
@@ -297,15 +325,11 @@ footer p {
 }
 
 @media (max-width: 400px) {
+
     header h1 {
         font-size: 3em;
         margin: 0 auto;
     }
-
-    .div-nav {
-        margin: 20px 0;
-    }
-
     .carousel-caption {
         display: initial !important;
         height: 55vh;
@@ -341,34 +365,53 @@ footer p {
     }
 
     #item-3 .carousel-caption h5 {
-        font-size: 1.1em;
+        font-size: 0.9em;
         margin: 5px 0;
     }
 }
 
 @media (max-width: 335px) {
+    .div
+    #isobre {
+        margin-top: -12%;
+    }
+    #isobre div img{
+        height: 60vh;
+    }
     #item-1 .carousel-caption {
         width: 100%;
-        height: 35vh;
+        margin-bottom: 0%;
+        height: 25vh;
         margin-left: -40px !important;
+    }
+    #item-1 .carousel-caption p {
+        font-size: 0.7em ;
     }
 
     #item-2 .carousel-caption {
         width: 100%;
-        height: 45vh;
+        height: 30vh;
+        margin-bottom: 0%;
         margin-left: -41px !important;
         padding: 5px;
+    }
+    #item-2 .carousel-caption p {
+        font-size: 0.7em;
     }
 
     #item-3 .carousel-caption {
         width: 100%;
-        height: 32vh;
+        height: 25vh;
+        margin-bottom:0%;
         margin-left: -40px !important;
         padding: 5px;
     }
+    #item-3 .carousel-caption p  {
+      font-size: 0.7em;
+    }
 
     #item-3 .carousel-caption h5 {
-        font-size: 1.1em;
+        font-size: 1em;
         margin: 5px 0;
     }
 }
