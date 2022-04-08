@@ -47,6 +47,9 @@ h2.text-center {
 }
 
 /* slider */
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgb(160, 160, 160);
+}
 #mainSlider img {
     height: 85vh;
 }
@@ -242,7 +245,10 @@ footer p {
         margin-top: 5%;
     }
     .carousel-caption {
-        margin-bottom: 2em;
+        width: 100%;
+        margin-left: -16% !important;
+        margin-bottom: 0%;
+        padding: 10px;
     }
 
     #inputuf {
@@ -255,7 +261,10 @@ footer p {
     body {
         padding: 10px;
     }
-
+    header h1 {
+        font-size: 3em;
+        margin: 0 auto;
+    }
     .div-nav {
         padding: 0;
     }
@@ -315,31 +324,29 @@ footer p {
     .carousel-caption {
         display: initial !important;
         height: 35vh;
-        width: 98%;
-        margin-bottom: 4px;
+        width: 100% ;        
+        margin-bottom: 0;
         margin-left: -54px !important;
+    }
+    #modal-4 .modal-body form div {
+        width: 100%;
+    }
+    #item-2 .carousel-caption {
+        width: 100%;
+        height: 40vh;
+        margin-left: -50px !important;
+        margin-bottom: 0%;
+        padding: 5px;
+    }
+    #item-3 .carousel-caption {
+        width: 100%;
+        height: 35vh;
+        margin-left: -50px !important;
+        margin-bottom: 0%;
+        padding: 5px;
     }
     #inputuf{
         width: 20%;
-    }
-}
-
-@media (max-width: 400px) {
-
-    header h1 {
-        font-size: 3em;
-        margin: 0 auto;
-    }
-    .carousel-caption {
-        display: initial !important;
-        height: 55vh;
-        width: 90%;
-        margin-bottom: 10px;
-        margin-left: -30px !important;
-    }
-
-    #modal-4 .modal-body form div {
-        width: 100%;
     }
 }
 
@@ -348,24 +355,28 @@ footer p {
         width: 100%;
         height: 30vh;
         margin-left: -50px !important;
+        margin-bottom: 0%;
+        padding: 5px;
     }
 
     #item-2 .carousel-caption {
         width: 100%;
-        height: 38vh;
+        height: 43vh;
         margin-left: -50px !important;
+        margin-bottom: 0%;
         padding: 5px;
     }
 
     #item-3 .carousel-caption {
         width: 100%;
-        height: 30vh;
+        height: 32vh;
         margin-left: -50px !important;
+        margin-bottom: 0%;
         padding: 5px;
     }
 
     #item-3 .carousel-caption h5 {
-        font-size: 0.9em;
+        font-size: 1em;
         margin: 5px 0;
     }
 }
@@ -390,7 +401,7 @@ footer p {
 
     #item-2 .carousel-caption {
         width: 100%;
-        height: 30vh;
+        height: 32vh;
         margin-bottom: 0%;
         margin-left: -41px !important;
         padding: 5px;
@@ -401,7 +412,7 @@ footer p {
 
     #item-3 .carousel-caption {
         width: 100%;
-        height: 25vh;
+        height: 28vh;
         margin-bottom:0%;
         margin-left: -40px !important;
         padding: 5px;
