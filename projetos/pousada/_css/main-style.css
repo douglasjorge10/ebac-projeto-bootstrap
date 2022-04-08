@@ -1,0 +1,331 @@
+@charset 'utf-8';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(122, 120, 120);
+}
+ul, li, a{
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+/* cabeçalho e menu de navegação */
+.cabecalho{
+    width: 70%;
+    height: auto;
+    line-height: 3em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cabecalho span{
+    color: #b6cbce;
+}
+.cabecalho h2{
+    margin: 6px;
+    font-size: 20pt;
+    
+}
+.cabecalho h2 a{
+    color: rgb(70, 64, 59);
+}
+.navMenu{
+    width: 20%;
+}
+.navMenu ul{
+    list-style: none;
+    display: flex;
+}
+.navMenu li{
+    margin: 5px;
+  
+}
+.navMenu a {
+    font-size: 17pt;
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+.navMenu a:hover{
+    color: rgb(22, 64, 99);
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 4px 1px;
+}
+/* imagem principal "imagem inicio" */
+.imgPrin, .imgPrin img {
+    width: 100%;
+}
+.imgPrin figcaption{
+    display: block;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 20%;
+    padding: 16px;
+    text-align: center;
+    font-size: 25pt;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    color: #fff;
+    border: solid 0.1px rgb(214, 197, 197);
+}
+/* "Seja Bem-Vindo" e cards de descrição dos qaurtos*/
+.imgPrin figcaption span{
+    line-height: 3em;
+    font-size: 35pt;
+}
+.artCont, .descruart{
+    margin: 50px auto;
+    width: 70%;
+    text-align: center;
+    line-height: 3em;
+}
+.artCont h2{
+    font-size: 25pt;
+}
+.descrQuart {
+   display: flex;
+   margin-top: 50px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.descrQuart figure{
+    margin-bottom: 50px;
+}
+.descrQuart .card{
+   border: solid 1px #fff;
+   box-shadow: rgba(68, 47, 47, 0.3) 2px 2px 5px;
+   
+}
+.card img:hover{
+    padding: 5px;
+    box-shadow: rgba(68, 47, 47, 10);
+}
+ .descrQuart img{
+     max-width: 300px;
+}
+/* Container Rotas */
+.artCont iframe{
+    width: 140%;
+    margin-left: -20%;  
+}
+/* Container "sobre a pousada" */
+.contCardSobre{
+    display: flex; 
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardSobre{
+    width: 46%;
+    height: auto;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row-reverse;  
+}
+.cardSobre figcaption{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    text-align: left;
+
+}
+.cardSobre img{
+    width: 40%;
+    height: auto;
+}
+#figquart{
+    line-height: 1em;
+    margin-bottom: -25px;
+}
+#figrecep {
+  width: 60%;
+}
+/* roda pé */
+.rodape{
+    width: 100%; 
+    padding-top: 30px;
+    color: #fff;
+    background-color: #009762;
+    height: auto;
+}
+.navFoot ul strong{
+    width: 100%;
+}
+.navFoot{
+    margin: 0 auto 15px;
+    padding-bottom: 50px;
+    height: 16vh;
+    width: 90%;
+    border-bottom: solid 2px rgba(2, 63, 2, 0.192);
+}
+.navFoot ul{
+    display: flex;
+}
+.navFoot ul li{
+    width: 100%;
+    margin: 0 15px
+}
+.navFoot ul li a, strong{
+    display: flex;
+    height: 5vh;
+    color: #fff;
+    
+}
+.navFoot ul li a img{
+    padding-right: 10px;
+}
+.rodape p{
+    padding-bottom: 20px;
+    text-align: center;
+}
+@media (min-width:1025px){
+#tel-center{
+    margin-left: 70px;
+}
+}
+@media (max-width:1024px){
+    #tel-center{
+        margin-left: 30px;
+    }
+    .artCont, .descruart {
+        width: 93%;
+}
+.artCont iframe{
+    width: 100%;
+    margin-left: 0;  
+}
+}
+@media (max-width:840px){
+    .cabecalho {
+        margin-left: 7%;
+    }
+    .imgPrin figcaption {
+        margin-top: -40%;
+    }
+    .artCont, .descruart {
+        width: 97%;
+    }
+    .descrQuart img {
+        max-width: 230px;
+    }
+    .artCont iframe{
+        width: 100%;
+        margin-left: 0;  
+    }
+
+}
+@media (max-width:600px){
+    section.corpo h2{
+        font-size: 16pt;
+    }
+    section.corpo p {
+        line-height: 1.3em;
+        font-size: 1em;
+        height: 120px;
+    }
+    
+    
+/* cabecalho header */
+    header.cabecalho{
+        width: 89%;
+        text-align: center;
+        display: block;
+        height: 17vh;
+    }
+    header.cabecalho nav.navMenu {
+        margin-top: -5%;
+        width: 100%;
+    }
+    header.cabecalho nav.navMenu ul li{
+        margin: 0 auto;
+    }
+    header.cabecalho nav.navMenu ul li a{
+        font-size: 12pt;
+    }
+/* imagem principal e seu figcaption */
+    section.corpo figure.imgPrin figcaption{
+        height: auto;
+        margin-top: -45%;
+        font-size: 12pt;
+    }
+    section.corpo figure.imgPrin figcaption span{
+        font-size: 15pt;
+    }
+    section.corpo p{
+        height: auto;
+    }
+/* imagens dos cards quartos */
+    article.artCont figure.card{
+        width: 70%;
+        margin: 20px auto;
+    }
+    article.artCont figure.card img{
+        width: 100%;   
+        height: auto;
+    }
+    figure.cardSobre p{
+        margin-top: 10px;
+        height: 170px;
+    }
+    .contCardSobre figure.cardSobre img {
+        height: 270px;
+    }
+    #figquart{
+        height: 200px;
+    }
+/* iframe rota */
+    article.artCont div.rota iframe{
+        height: 55vh;
+    }
+/* texto titulos e cards da secao sobre */
+    section.corpo .contCardSobre{
+        margin-top: 10px;
+        width: 100%;
+        
+    }
+    .contCardSobre figure.cardSobre{
+        display: flex;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .contCardSobre figure.cardSobre h3{
+        width: 100%;
+    }
+    .contCardSobre figure.cardSobre img{
+        height: auto;
+      
+    }
+/* footer rosape */
+    footer.rodape{
+        height: auto;
+        clear: both;
+    }
+    footer.rodape nav{
+        height: auto;
+    }
+    footer.rodape nav ul{
+        display: block;
+        height: auto;
+        width: 50%;        
+    }
+    footer.rodape nav ul li{
+        width: 100%;
+        font-size: 12pt;
+        margin:  0;
+        padding: 10px 0;
+    }
+    footer.rodape nav ul li a{
+        width: 200%;
+    }
+    footer.rodape nav,
+    footer.rodape p{
+        padding-bottom: 10px;
+    }
+}
